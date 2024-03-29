@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config();
-import { app } from "./app.js";
-import { connectDatabase } from "./db/index.js";
+import { app } from "./src/app.js";
+import { connectDatabase } from "./src/db/index.js";
 
 app.get("/", async (req, res) => {
   res.json({ message: "Welcome" });
